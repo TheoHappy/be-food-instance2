@@ -19,7 +19,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping(" ")
+@RequestMapping("/api/food")
 @RequiredArgsConstructor
 public class FoodController {
     private final FoodService foodService;
