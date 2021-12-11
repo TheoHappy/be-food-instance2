@@ -1,0 +1,19 @@
+server:
+  port: 9096
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_HOST:http://discovery-service-food-app.herokuapp.com/eureka/}
+  instance:
+    instance-id: food-backend-instance-2
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:postgresql://fooddb1.ca9ycjopwtqs.us-east-2.rds.amazonaws.com:5432/food1
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
