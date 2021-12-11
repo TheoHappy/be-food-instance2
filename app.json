@@ -1,0 +1,11 @@
+{
+  "name": "be-food-instance2",
+  "addons": [
+    "logentries"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/gradle"
+    }
+  ]
+}
